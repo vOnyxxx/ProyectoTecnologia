@@ -23,6 +23,10 @@ body {
     font-weight: bold;
 }
 
+.box1 button:hover {
+    background-color: #008ecc;
+}
+
 .box1 img {
     height: 50px;
 }

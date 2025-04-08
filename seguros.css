@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #003366, #0055aa);
+    color: white;
+}
+
+.box1 {
+    background-color: #001f3f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.box1 img {
+    height: 50px;
+}
+
+.box1 button {
+    background-color: white;
+    color: #003366;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.box1 button:hover {
+    background-color: #008ecc;
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(to right, #001f3f, #0074D9);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.box2-left img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+.box2-right {
+    max-width: 600px;
+    margin-left: 2rem;
+}
+
+.box2-right p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.box2-right strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.cotiza {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.flecha {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+.formulario-box {
+    background-color: white;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #003366;
+}
+
+.input-group input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #0074D9;
+    outline: none;
+}
+
+.boton-enviar {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #005fa3;
+}
+
+footer {
+    background-color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.box6 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.box6 img {
+    height: 40px;
+}
+
+/* --- Responsive ajustes --- */
+@media (max-width: 768px) {
+    .box2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box2-right {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
