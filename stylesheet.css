@@ -1,0 +1,190 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #003366, #0055aa);
+    color: white;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #001f3f;
+}
+
+.box1 button {
+    background-color: white;
+    color: #003366;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.box1 img {
+    height: 50px;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 4rem;
+    background: linear-gradient(to right, #001f3f, #0074D9);
+}
+
+.box2 h1 {
+    width: 50%;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    color: white;
+}
+
+.personas-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 2rem;
+    width: 50%;
+}
+
+.personas-box img {
+    max-height: 400px;
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.personas-box img:hover {
+    transform: scale(1.05);
+}
+
+
+
+h3 {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+#personas{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #004b8d;
+}
+
+.box3 img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+
+.imagenes-grid1 img {
+    transition: transform 0.3s ease;
+}
+
+.imagenes-grid1 img:hover {
+    transform: scale(1.05);
+}
+
+.box4 {
+    
+    background: linear-gradient(to right, #001f3f, #0074D9);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box4 h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.box4 p {
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.box4 a img {
+    width: 100px;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.imagenes-grid2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+.imagenes-grid2 img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes-grid2 img:hover {
+    transform: scale(1.05);
+}
+
+.box4_4 {
+   
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    box-shadow: 0 10px 10px white;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+li {
+    background-color: white;
+    color: #003366;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: #003366;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.box6 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.box6 img {
+    height: 40px;
+}
