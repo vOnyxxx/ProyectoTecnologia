@@ -5,6 +5,18 @@ body {
     color: white;
 }
 
+.boton {
+    background-color: white;
+    color: #003366;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
 .box1 {
     background-color: #001f3f;
     color: white;
