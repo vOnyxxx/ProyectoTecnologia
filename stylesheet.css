@@ -1,4 +1,5 @@
 html,body {
+    scroll-behavior: smooth;
     margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom, #003366, #0055aa);
@@ -236,36 +237,103 @@ footer p {
     height: 40px;
 }
 
+.ayuda-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+#ayudaBtn {
+    background-color: #005fa3;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.tooltip {
+    background-color: white;
+    color: #003366;
+    padding: 0.7rem 1rem;
+    border-radius: 12px;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.boton-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 1000;
+}
+
+.boton-flotante:hover {
+    transform: scale(1.1);
+    background-color: #005fa3;
+}
+.menu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 200px;
+}
+
+.submenu a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #003366;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.submenu a:hover {
+    text-decoration: underline;
+}
+a:focus-visible, button:focus-visible {
+    outline: 3px solid #00ccff;
+    outline-offset: 3px;
+}
 @media (max-width: 768px) {
-    .box1 {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
+    .imagenes-grid2 {
+      grid-template-columns: repeat(2, 1fr);
     }
-
-    .box2 {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem 1rem;
-    }
-
-    .box2-left img {
-        max-width: 100%;
-    }
-
-    .box2-right {
-        margin-top: 1.5rem;
-    }
-
-    .form-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .boton-enviar {
-        width: 100%;
-    }
-
-    footer p {
-        font-size: 1rem;
+  }
+  
+@media (max-width: 480px) {
+    .imagenes-grid2 {
+      grid-template-columns: 1fr;
     }
 }
