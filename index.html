@@ -1,68 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-
-    <link rel="stylesheet" href="stylesheet.css">
+  <meta charset="UTF-8">
+  <title>Inicio - Seguros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Asegúrate con nosotros y encuentra el seguro ideal.">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="box1">
-        <a href="#servicios" class="boton1">Servicios</a>
-    <a href="index.html"><img src="Imagenes/logo blanco bogotana png.png" alt="Logo"></a>
-    <a href="#" class="boton2">Contactanos</a>
-    </div>
+  <header class="box1" role="banner">
+    <nav aria-label="Menú principal">
+      <a href="#servicios" class="boton1" role="link">Servicios</a>
+    </nav>
+    <a href="index.html" aria-label="Ir al inicio">
+      <img src="Imagenes/logo blanco bogotana png.png" alt="Logo de La Bogotana Seguros">
+    </a>
+    <a href="#contacto" class="boton2" role="link">Contáctanos</a>
+  </header>
 
-    <div class="box2">
-    <h1>ASESORATE CON NOSOTOS Y OBTEN EL SEGURO Y SERVICIO IDEAL </h1>
-        <div class="personas-box">
-            <img src="Imagenes/man-with-glasses-beard-wearing-glasses-removebg-preview-Photoroom.png" alt="img1">
-        </div>       
-    </div>
+  <main>
+    <section class="box2" aria-label="Mensaje de bienvenida">
+      <h1>Asesórate con nosotros y obtén el seguro y servicio ideal</h1>
+      <div class="personas-box">
+        <img src="Imagenes/man-with-glasses-beard-wearing-glasses-removebg-preview-Photoroom.png" alt="Asesor de seguros profesional sonriendo">
+      </div>
+    </section>
 
     <h3>Personas ayudando personas</h3>
 
-    <div class="box3">
-        <div class="imagenes-grid1">
-            <a href="#"><img src="Imagenes/img1.jpg" alt="Imagen 1"></a>
-            <a href="#"><img src="Imagenes/img2.jpg" alt="Imagen 1"></a>
-            <a href="#"><img src="Imagenes/img3.jpg" alt="Imagen 1"></a>
-        </div>
-    </div>
+    <section class="box3" aria-label="Ejemplos de servicios">
+      <div class="imagenes-grid1">
+        <a href="#"><img src="Imagenes/img1.jpg" alt="Servicio de salud familiar"></a>
+        <a href="#"><img src="Imagenes/img2.jpg" alt="Seguro de auto económico"></a>
+        <a href="#"><img src="Imagenes/img3.jpg" alt="Cobertura de hogar completa"></a>
+      </div>
+    </section>
 
-    <div class="box4">
-    <div class="box4_4">
-    <h2 id="servicios">Nuestros Servicios</h2>
-    <p>Te ofrecemos una amplia gama de productos manejando toda clase de seguros, trabajando con diferentes comapñias aseguradoras para comparar, analizar y obtener el mejor seguro para tu tranquilidad.</p>
-        <div class="imagenes-grid2">
-            <a href="seguroespec.html"><img src="Imagenes/1.jpg" alt="Imagen 1"></a>
-            <a href="seguroespec.html"><img src="Imagenes/2.jpg" alt="Imagen 2"></a>
-            <a href="seguroespec.html"><img src="Imagenes/3.jpg" alt="Imagen 3"></a>
-            <a href="seguroespec.html"><img src="Imagenes/4.jpg" alt="Imagen 4"></a>
-            <a href="seguroespec.html"><img src="Imagenes/5.jpg" alt="Imagen 5"></a>
-            <a href="seguroespec.html"><img src="Imagenes/6.jpg" alt="Imagen 6"></a>
-            <a href="seguroespec.html"><img src="Imagenes/7.jpg" alt="Imagen 7"></a>
-            <a href="seguroespec.html"><img src="Imagenes/8.jpg" alt="Imagen 8"></a>
+    <section class="box4" id="servicios" aria-label="Nuestros Servicios">
+      <div class="box4_4">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos una amplia gama de seguros con diversas compañías para comparar y brindarte la mejor opción para tu tranquilidad.</p>
+        <div class="imagenes-grid2" role="list">
+          <a href="seguroespec.html"><img src="Imagenes/1.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/2.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/3.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/4.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/5.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/6.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/7.jpg" alt="Seguro 1"></a>
+          <a href="seguroespec.html"><img src="Imagenes/8.jpg" alt="Seguro 1"></a>
         </div>
-    </div>
-
-    <ul>
-        <li>25 años de experiencia</li>
-        <li>+200 clientes tranquilos</li>
+      </div>
+      <ul>
+        <li><span id="contadorAnios" class="contador" aria-label="Años de experiencia">0</span> años de experiencia</li>
+        <li><span id="contadorClientes" class="contador" aria-label="Clientes satisfechos">0</span> clientes tranquilos</li>
         <li>Asistencia personalizada</li>
-    </ul>
-</div>
+      </ul>
+    </section>
+  </main>
 
+  <button id="botonAyuda" class="boton-flotante" aria-label="Botón de ayuda">💬</button>
 
-</body>
-
-<footer>
-    <p>Trabajamos con los mejores</p>
+  <footer>
+    <p>Trabajamos con los mejores aliados</p>
     <div class="box6">
-    <img src="Imagenes/sura.png" alt="Sura">
-    <img src="Imagenes/aseguradora-solidaria.png" alt="Aseguradora Solidaria">
-    <img src="Imagenes/equidad.png" alt="Equidad">
-    <img src="Imagenes/seguros-estado.png" alt="Seguros del estado">
+        <img src="Imagenes/sura.png" alt="Logo de aseguradora Sura">
+        <img src="Imagenes/aseguradora-solidaria.png" alt="Aseguradora Solidaria">
+        <img src="Imagenes/equidad.png" alt="Equidad">
+        <img src="Imagenes/seguros-estado.png" alt="Seguros del estado">
     </div>
-</footer>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
 </html>
