@@ -330,10 +330,33 @@ a:focus-visible, button:focus-visible {
     .imagenes-grid2 {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .personas-box img {
+        max-height: 250px;
+    }
+    
+    .box3 {
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box3 img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
   }
   
 @media (max-width: 480px) {
     .imagenes-grid2 {
       grid-template-columns: 1fr;
+    }
+    .personas-box img {
+        max-height: 200px;
+        width: 100%;
+    }
+
+    .box3 img {
+        width: 100%;
     }
 }
