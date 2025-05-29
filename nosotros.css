@@ -1,0 +1,168 @@
+
+.box1 {
+    background-color: #056cf2;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 2rem;
+}
+
+.enlace {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Efecto hover para aclarar el enlace */
+.enlace:hover {
+    color: #e0f0ff;
+}
+
+/* Línea animada al pasar el puntero */
+.enlace::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.enlace:hover::after {
+    width: 100%;
+}
+
+.nav-link {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #cce6ff;
+  transform: translateY(-2px);
+}
+
+
+.box-nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 0% 2rem;
+  gap: 2rem;
+}
+
+.nosotros-texto {
+  flex: 1 1 500px;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+}
+
+.nosotros-texto h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.nosotros-texto p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.nosotros-imagen {
+  flex: 1 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nosotros-imagen img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .box-nosotros {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nosotros-texto, .nosotros-imagen {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+.footer {
+  background-color: #056cf2;
+  padding: 3rem 1rem 1rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+
