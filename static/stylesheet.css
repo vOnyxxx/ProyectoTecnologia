@@ -1,0 +1,376 @@
+/* TIPOGRAFÍAS GLOBALES */
+html, body {
+    margin: 0;
+    background: linear-gradient(to bottom, #003366, #0055aa);
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Poppins', sans-serif; /* Para todo el cuerpo */
+}
+.subtexto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.4;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Rubik', sans-serif; /* Para títulos */
+}
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------- HEADER ---------- */
+.box1 {
+    background-color: #056cf2;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 2rem;
+}
+
+.enlace {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Efecto hover para aclarar el enlace */
+.enlace:hover {
+    color: #e0f0ff;
+}
+
+/* Línea animada al pasar el puntero */
+.enlace::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.enlace:hover::after {
+    width: 100%;
+}
+
+/* ---------- primero ---------- */
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 4rem;
+    background-color: #056cf2;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.box2-left {
+    flex: 1 1 50%;
+    color: white;
+}
+
+.box2-left h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    line-height: 1;
+}
+
+.box2-right {
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2-right img {
+    max-width: 100%;
+    height: auto;
+    max-height: 800px;
+    object-fit: contain;
+
+}
+
+
+/* ---------- carrusel ---------- */
+
+.seccion-h3 {
+  background-color: white;
+  padding: 0.1rem;
+  text-align: center;
+}
+
+h2 {
+  background-color: white;
+  color: #898a8a; /* o el azul que estás usando */
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 0rem;
+  margin: 1rem auto;
+  width: fit-content;
+  border-radius: 10px;
+  font-weight: 500; /* para que se vea un poco más grueso */
+}
+
+.carrusel-companias {
+  overflow: hidden;
+  background-color: white;
+  padding: 1rem 0; /* Aumenta el alto */
+  position: relative;
+}
+
+.carrusel-track {
+  display: flex;
+  gap: 4rem;
+  animation: scroll 30s linear infinite;
+  align-items: center;
+  will-change: transform;
+  scroll-behavior: smooth;
+  touch-action: pan-x;
+}
+
+/* Logos más grandes */
+.carrusel-track img {
+  height: 100px; /* Puedes ajustar a 100px si quieres más grande */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.carrusel-track img:hover {
+  transform: scale(1.1);
+}
+
+/* Pausar animación al hacer hover */
+.carrusel-companias:hover .carrusel-track {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* ---------- metricas ---------- */
+
+.seccion-estadisticas {
+  background-color: white;
+  color: #003366;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 3rem 1rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.estadistica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.estadistica .numero {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #056cf2;
+}
+
+.estadistica p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+
+/* ---------- SECCIÓN IMÁGENES PEQUEÑAS ---------- */
+.box3 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 3rem 1rem;
+  background-color: white;
+}
+
+.imagenes-grid1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.imagenes-grid1 img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagenes-grid1 img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .imagenes-grid1 img {
+    max-width: 90%;
+  }
+}
+
+/* ---------- SECCIÓN SERVICIOS ---------- */
+.box4 {
+background-color: white;
+color: #424242;
+padding: 2rem 1.5rem;
+text-align: center;
+}
+
+.box4 h2 {
+font-family: 'Rubik', sans-serif;
+font-size: 2.2rem;
+margin-bottom: 1rem;
+}
+
+.box4 p {
+font-family: 'Poppins', sans-serif;
+max-width: 700px;
+margin: 0 auto 2.5rem auto;
+font-size: 1.1rem;
+}
+
+.servicios-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 2rem;
+justify-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 1rem;
+}
+
+.servicio {
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: transform 0.3s ease;
+max-width: 100%;
+}
+
+.servicio img {
+width: 100%;
+max-width: 300px;
+height: auto;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+margin-bottom: 1rem;
+}
+
+.servicio p {
+font-family: 'Poppins', sans-serif;
+font-weight: 500;
+font-size: 1rem;
+margin: 0;
+}
+
+.servicio:hover {
+transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+.servicios-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 1.5rem;
+}
+}
+
+@media (max-width: 600px) {
+.servicios-grid {
+grid-template-columns: 1fr;
+padding: 0;
+}
+
+.servicio img {
+max-width: 90%;
+}
+}
+
+/* ---------- footer ---------- */
+.footer {
+  background-color: #056cf2;
+  padding: 3rem 1rem 1rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}

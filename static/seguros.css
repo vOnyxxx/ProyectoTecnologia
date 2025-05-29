@@ -1,0 +1,225 @@
+/* TIPOGRAFÍAS GLOBALES */
+html, body {
+    margin: 0;
+    background: linear-gradient(to bottom, #003366, #0055aa);
+    color: white;
+    overflow-x: hidden;
+    width: 100%;
+    font-family: 'Poppins', sans-serif; /* Para todo el cuerpo */
+}
+.subtexto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 1.4;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Rubik', sans-serif; /* Para títulos */
+}
+a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: inherit;
+}
+
+.box1 {
+    background-color: #056cf2;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.enlaces {
+    display: flex;
+    gap: 2rem;
+}
+
+.enlace {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+/* Efecto hover para aclarar el enlace */
+.enlace:hover {
+    color: #e0f0ff;
+}
+
+/* Línea animada al pasar el puntero */
+.enlace::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.enlace:hover::after {
+    width: 100%;
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     background-color: #056cf2;
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.box2-left img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1rem;
+}
+
+.box2-right {
+    max-width: 600px;
+    margin-left: 2rem;
+}
+
+.box2-right p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.box2-right strong {
+    font-size: 1.2rem;
+    display: block;
+    margin-top: 1rem;
+}
+
+.cotiza {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+.flecha {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+.formulario-box {
+    background-color: white;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #003366;
+}
+
+.input-group input {
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #0074D9;
+    outline: none;
+}
+
+.boton-enviar {
+    display: block;
+    margin: 2rem auto 0;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 0.9rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+    background-color: #005fa3;
+}
+
+.footer {
+  background-color: #056cf2;
+  padding: 3rem 1rem 1rem;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo {
+  height: 150px;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}
+

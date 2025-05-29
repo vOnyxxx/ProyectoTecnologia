@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
+</head>
+<body>
+
+  <div class="box1">
+    <a href="{{ url_for('index') }}" class="Logo">
+      <img src="{{ url_for('static', filename='Imagenes/logo blanco bogotana png.png') }}" alt="Logo Bogotana">
+    </a>
+    <nav class="enlaces">
+      <a href="{{ url_for('nosotros') }}" class="enlace">Nosotros</a>
+      <a href="#" class="enlace">Contacto</a>
+    </nav>
+  </div>
+
+  <div class="box2">
+    <div class="box2-left">
+      <h1><strong>Asesórate con nosotros y obtén el seguro y servicio ideal</strong></h1>
+      <p class="subtexto">Confía en nuestros expertos y encuentra el seguro perfecto para ti. Te ofrecemos un servicio personalizado y adaptado a tus necesidades.</p>
+    </div>
+    <div class="box2-right">
+      <img src="{{ url_for('static', filename='Imagenes/92c4750dd93e2b3cb92c8fd1c6157f4fa4b42e7b.png') }}" alt="img1">
+    </div>
+  </div>
+
+  <div class="seccion-h3">
+    <h2>Trabajamos con los mejores</h2>
+  </div>
+
+  <div class="carrusel-companias">
+    <div class="carrusel-track">
+      <img src="{{ url_for('static', filename='Imagenes/Grupo_Sura-300x150.png') }}" alt="Sura">
+      <img src="{{ url_for('static', filename='Imagenes/Aseguradora_Solidaria-300x150.png') }}" alt="Solidaria">
+      <img src="{{ url_for('static', filename='Imagenes/Equidad_Seguros-300x150.png') }}" alt="Equidad">
+      <img src="{{ url_for('static', filename='Imagenes/Seguros_del_Estado-300x150.png') }}" alt="Seguros del Estado">
+      <img src="{{ url_for('static', filename='Imagenes/Liberty_Seguros-300x150.png') }}" alt="Liberty">
+      <img src="{{ url_for('static', filename='Imagenes/Grupo_Sura-300x150.png') }}" alt="Sura">
+      <img src="{{ url_for('static', filename='Imagenes/Aseguradora_Solidaria-300x150.png') }}" alt="Solidaria">
+      <img src="{{ url_for('static', filename='Imagenes/Equidad_Seguros-300x150.png') }}" alt="Equidad">
+      <img src="{{ url_for('static', filename='Imagenes/Seguros_del_Estado-300x150.png') }}" alt="Seguros del Estado">
+      <img src="{{ url_for('static', filename='Imagenes/Liberty_Seguros-300x150.png') }}" alt="Liberty">
+    </div>
+  </div>
+
+  <div class="seccion-estadisticas">
+    <div class="estadistica">
+      <span class="numero" data-numero="+25">0</span>
+      <p>Años de experiencia</p>
+    </div>
+    <div class="estadistica">
+      <span class="numero" data-numero="+500">0</span>
+      <p>Clientes tranquilos</p>
+    </div>
+    <div class="estadistica">
+      <span class="numero" data-numero="1">0</span>
+      <p>Asistencia personalizada</p>
+    </div>
+  </div>
+
+  <div class="box3">
+    <div class="imagenes-grid1">
+      <a href="#"><img src="{{ url_for('static', filename='Imagenes/img1.jpg') }}" alt="Imagen 1"></a>
+      <a href="#"><img src="{{ url_for('static', filename='Imagenes/img2.jpg') }}" alt="Imagen 2"></a>
+      <a href="#"><img src="{{ url_for('static', filename='Imagenes/img3.jpg') }}" alt="Imagen 3"></a>
+    </div>
+  </div>
+
+  <div class="box4">
+    <div class="box4-contenido">
+      <h2 id="servicios">Nuestros Servicios</h2>
+      <p>Te ofrecemos una amplia gama de productos de seguros. Trabajamos con las principales aseguradoras del país para brindarte tranquilidad y confianza.</p>
+
+      <div class="servicios-grid">
+        {% for categoria in categorias %}
+        <a href="{{ url_for('seguroespec', id=categoria.id_categoria) }}" class="servicio">
+          <img src="{{ url_for('static', filename=categoria.imagen_url) }}" alt="Servicio {{ categoria.nombre }}">
+          <p>{{ categoria.nombre }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <img src="{{ url_for('static', filename='Imagenes/logo blanco bogotana png.png') }}" alt="Logo Bogotana" class="footer-logo" />
+      <p class="footer-text">Bogotana de Seguros - Protegiendo lo que más importa</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><img src="{{ url_for('static', filename='Imagenes/facebook-new.png') }}" alt="Facebook" /></a>
+        <a href="#" aria-label="Instagram"><img src="{{ url_for('static', filename='Imagenes/instagram-new.png') }}" alt="Instagram" /></a>
+        <a href="#" aria-label="WhatsApp"><img src="{{ url_for('static', filename='Imagenes/whatsapp.png') }}" alt="WhatsApp" /></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Bogotana de Seguros. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
