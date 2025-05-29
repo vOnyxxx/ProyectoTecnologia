@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Seguros</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='seguros.css') }}">
+</head>
+<body>  
+    <div class="box1">
+    <a href="{{ url_for('index') }}" class="Logo">
+      <img src="{{ url_for('static', filename='Imagenes/logo blanco bogotana png.png') }}" alt="Logo Bogotana">
+    </a>
+    <nav class="enlaces">
+      <a href="{{ url_for('nosotros') }}" class="enlace">Nosotros</a>
+      <a href="#" class="enlace">Contacto</a>
+    </nav>
+  </div>
+
+    <div class="box2">
+        <div class="box2-left">
+            <img src="{{ url_for('static', filename=categoria.imagen_url) }}" alt="Servicio {{ categoria.nombre }}">
+        </div>
+        <div class="box2-right">
+            <p>{{categoria.descripcion}}</p>
+            <strong>¡Tu bienestar es nuestra prioridad!</strong>
+            <div class="cotiza">
+                <h1>Cotiza ahora</h1>
+            </div>
+            <div class="flecha">⬇</div>
+        </div>
+    </div>
+    
+    <div class="formulario-box" id="contacto">
+    <form>
+        <div class="form-grid">
+            <div class="input-group">
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre y apellido" required>
+            </div>
+            <div class="input-group">
+                <label for="seguro">Seguro*</label>
+                <input type="text" id="seguro" name="seguro" placeholder="Escribe el seguro de interés" required>
+            </div>
+            <div class="input-group">
+                <label for="telefono1">Teléfono</label>
+                <input type="text" id="telefono1" name="telefono1" placeholder="Escribe tu Whatsapp">
+            </div>
+            <div class="input-group">
+                <label for="correo">Correo electrónico*</label>
+                <input type="email" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+            </div>
+            <div class="input-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" placeholder="Escribe tu empresa">
+            </div>
+            <div class="input-group">
+                <label for="telefono2">Teléfono</label>
+                <input type="text" id="telefono2" name="telefono2" placeholder="Escribe tu Whatsapp">
+            </div>
+        </div>
+        <button class="boton-enviar" type="submit">Enviar mis datos</button>
+    </form>
+</div>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+    <img src="{{ url_for('static', filename='Imagenes/logo blanco bogotana png.png') }}" alt="Logo Bogotana" class="footer-logo" />
+
+    <p class="footer-text">Bogotana de Seguros - Protegiendo lo que más importa</p>
+
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><img src="{{ url_for('static', filename='Imagenes/facebook-new.png') }}" alt="Facebook" /></a>
+      <a href="#" aria-label="Instagram"><img src="{{ url_for('static', filename='Imagenes/instagram-new.png') }}" alt="Instagram" /></a>
+      <a href="#" aria-label="WhatsApp"><img src="{{ url_for('static', filename='Imagenes/whatsapp.png') }}" alt="WhatsApp" /></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2024 Bogotana de Seguros. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+</html>
